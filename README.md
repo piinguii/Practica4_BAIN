@@ -2,6 +2,26 @@
 
 ## Olivia Troitiño, Claudia Gascó, Alberto Martin
 
+```
+👥 Organización del trabajo (3 personas)
+🔹 Persona A: Obtención y preprocesamiento de datos
+    Extraer al menos 10 reseñas reales (pueden ser más).
+    Etiquetarlas manualmente o tomar reseñas con calificación (1 estrella = negativa, 5 estrellas = positiva).
+    Guardarlas en un archivo .csv o .json.
+    Opcional: crear un pequeño notebook para dejar documentado el paso (cuenta como “Notebook extractor de datos inicial”).
+🔹 Persona B: Diseño de prompts y ejecución
+    Crear 3 prompts por técnica.
+    Ejecutar los prompts en al menos 3 modelos distintos de Hugging Face.
+🔹 Persona C: Evaluación y presentación
+    Comparar resultados entre modelos y entre tipos de prompts.
+    Medir: precisión, coherencia, errores frecuentes, etc.
+    Redactar el análisis de resultados, incluyendo:
+        Qué prompts funcionaron mejor
+        Qué modelo fue más acertado o rápido
+        Qué dificultades tuvieron
+    Armar la presentación (PowerPoint o PDF).
+```
+
 El objetivo de esta práctica es *demostrar la capacidad de aplicar modelos de tipo Large Language Models (LLMs) para extraer conocimiento*. Los estudiantes deberán utilizar un LLM, ya sea descargado o a través de una API pública, y *diseñar un prompt adecuado utilizando técnicas de prompt engineering*. Este proceso permitirá la automatización del procesamiento de información, la generación de un reporte y la evaluación de la calidad del resultado.
 
 La práctica puede realizarse en grupos de hasta 4 personas, cuyos nombres deben estar claramente indicados en un documento README.md. Durante la realización de la práctica, será necesario explorar el funcionamiento de al menos tantos modelos de tipo LLM como participantes en el grupo. Estos modelos pueden ser del repositorio de Hugging Face o de una API pública. Además, se deben probar al menos tres tipos de prompts, cada uno utilizando una técnica de prompt engineering: zero-shot (solo explicación), few-shots (explicación con ejemplos) y chain of thoughts (razonamiento del resultado).
