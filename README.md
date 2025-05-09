@@ -6,7 +6,11 @@ El objetivo de esta práctica es *demostrar la capacidad de aplicar modelos de t
 
 La práctica puede realizarse en grupos de hasta 4 personas, cuyos nombres deben estar claramente indicados en un documento README.md. Durante la realización de la práctica, será necesario explorar el funcionamiento de al menos tantos modelos de tipo LLM como participantes en el grupo. Estos modelos pueden ser del repositorio de Hugging Face o de una API pública. Además, se deben probar al menos tres tipos de prompts, cada uno utilizando una técnica de prompt engineering: zero-shot (solo explicación), few-shots (explicación con ejemplos) y chain of thoughts (razonamiento del resultado).
 
-Prompt engineering:
+LLMs seleccionados:
+1. `distilbert-base-uncased-finetuned-sst-2-english`
+- 
+
+Teoría prompt engineering:
 - **Zero-shot** prompting means that the prompt used to interact with the model won't contain examples or demonstrations. The zero-shot prompt directly instructs the model to perform a task without any additional examples to steer it.
     Example: 
     ``` Prompt:
@@ -41,7 +45,7 @@ Prompt engineering:
 
 El *problema a resolver* es libre, pero debe ser validable como correctamente resuelto o no, o tener algún tipo de métrica numérica. Algunas ideas incluyen la detección de copia en prácticas, la corrección automática de exámenes de programación, la detección de spam, la extracción de contactos de una página web ... Es importante que el sistema se pueda aplicar a más de una fuente de datos o documentos (al menos 10), permitiendo el conteo del número de aciertos o una nota media de calidad si la evaluación es numérica.
 
-    El problema a resolver es un análisis de reseñas de Amazon.
+    El problema a resolver es un análisis de reseñas de Amazon, las estrellas que el usuario le da al producto (1-5) y el sentimiento (negativo, neutro, positivo).
 
 La práctica se entregará en forma de Jupyter Notebook, que debe ser aplicable en Google Colab. En el Jupyter Notebook deben aparecer los modelos a descargar, los prompts explicados, ejecutados y evaluados. Además, se debe preparar una presentación para exponer el último día de clase, explicando el problema, los prompts y modelos que mejor funcionaron, y un resumen de los resultados obtenidos con conclusiones finales.
 
