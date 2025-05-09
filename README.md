@@ -7,13 +7,15 @@ El objetivo de esta práctica es *demostrar la capacidad de aplicar modelos de t
 La práctica puede realizarse en grupos de hasta 4 personas, cuyos nombres deben estar claramente indicados en un documento README.md. Durante la realización de la práctica, será necesario explorar el funcionamiento de al menos tantos modelos de tipo LLM como participantes en el grupo. Estos modelos pueden ser del repositorio de Hugging Face o de una API pública. Además, se deben probar al menos tres tipos de prompts, cada uno utilizando una técnica de prompt engineering: zero-shot (solo explicación), few-shots (explicación con ejemplos) y chain of thoughts (razonamiento del resultado).
 
 Librerías:
-- datasets
-- pandas
-- os
-- transformers
-- tf-keras
-- torch
-
+```
+%pip install datasets
+%pip install transformers
+%pip install pandas
+%pip install tensorflow
+%pip install torch
+%pip install tf-keras
+%pip install os
+```
 
 LLMs seleccionados:
 1. `siebert/sentiment-roberta-large-english`
