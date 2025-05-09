@@ -22,6 +22,11 @@
     Armar la presentación (PowerPoint o PDF).
 ```
 
+## Olivia: Prompts y Ejecución
+- Tengo un prompt por cada técnica, todas corren pero la última (CoT) da todo negativo en los primeros dos modelos.
+#TODO armar dos prompts más por cada técnica
+#TODO reevaluar el prompt de CoT para ver si no lo estoy guiando a lo negativo O ALTERNATIVAMENTE reevaluar si son los modelos correctos para la práctica.
+
 El objetivo de esta práctica es *demostrar la capacidad de aplicar modelos de tipo Large Language Models (LLMs) para extraer conocimiento*. Los estudiantes deberán utilizar un LLM, ya sea descargado o a través de una API pública, y *diseñar un prompt adecuado utilizando técnicas de prompt engineering*. Este proceso permitirá la automatización del procesamiento de información, la generación de un reporte y la evaluación de la calidad del resultado.
 
 La práctica puede realizarse en grupos de hasta 4 personas, cuyos nombres deben estar claramente indicados en un documento README.md. Durante la realización de la práctica, será necesario explorar el funcionamiento de al menos tantos modelos de tipo LLM como participantes en el grupo. Estos modelos pueden ser del repositorio de Hugging Face o de una API pública. Además, se deben probar al menos tres tipos de prompts, cada uno utilizando una técnica de prompt engineering: zero-shot (solo explicación), few-shots (explicación con ejemplos) y chain of thoughts (razonamiento del resultado).
