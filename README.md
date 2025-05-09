@@ -63,7 +63,7 @@ README separado en dos secciones.
 
 
 
-## 
+## Entrega
 ### Librerías
 ```
 %pip install datasets
