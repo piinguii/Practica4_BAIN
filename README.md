@@ -8,7 +8,11 @@ La práctica puede realizarse en grupos de hasta 4 personas, cuyos nombres deben
 
 LLMs seleccionados:
 1. `distilbert-base-uncased-finetuned-sst-2-english`
-- 
+- Clasifica positivo o negativo, pero no neutro.
+2. `nlptown/bert-base-multilingual-uncased-sentiment`
+- Clasifica de 1 a 5 estrellas.
+3. `cardiffnlp/twitter-roberta-base-sentiment`
+- Clasifica positivo, neutro o negativo.
 
 Teoría prompt engineering:
 - **Zero-shot** prompting means that the prompt used to interact with the model won't contain examples or demonstrations. The zero-shot prompt directly instructs the model to perform a task without any additional examples to steer it.
