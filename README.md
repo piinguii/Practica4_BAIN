@@ -15,8 +15,8 @@ Librerías:
 
 
 LLMs seleccionados:
-1. `distilbert-base-uncased-finetuned-sst-2-english`
-- Clasifica positivo o negativo, pero no neutro.
+1. `siebert/sentiment-roberta-large-english`
+- Clasifica reseñas en positivo y negativo.
 2. `nlptown/bert-base-multilingual-uncased-sentiment`
 - Clasifica de 1 a 5 estrellas.
 3. `cardiffnlp/twitter-roberta-base-sentiment`
