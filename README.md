@@ -12,6 +12,7 @@ Librerías:
 - os
 - transformers
 - tf-keras
+- torch
 
 
 LLMs seleccionados:
