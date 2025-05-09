@@ -1,9 +1,12 @@
 # Practica4
-
 ## Olivia Troitiño, Claudia Gascó, Alberto Martin
+README separado en dos secciones.
+1. [Dev](Dev) (comentarios durante el development de la práctica)
+2. Entrega (información README estándar)
 
+## Dev
+### 👥 Organización del trabajo (3 personas)
 ```
-👥 Organización del trabajo (3 personas)
 🔹 Persona A: Obtención y preprocesamiento de datos
     Extraer al menos 10 reseñas reales (pueden ser más).
     Etiquetarlas manualmente o tomar reseñas con calificación (1 estrella = negativa, 5 estrellas = positiva).
@@ -21,36 +24,12 @@
         Qué dificultades tuvieron
     Armar la presentación (PowerPoint o PDF).
 ```
-
-## Olivia: Prompts y Ejecución
+**Persona B (Olivia): Prompts y Ejecución**
 - Tengo un prompt por cada técnica, todas corren pero la última (CoT) da todo negativo en los primeros dos modelos.
 #TODO armar dos prompts más por cada técnica
 #TODO reevaluar el prompt de CoT para ver si no lo estoy guiando a lo negativo O ALTERNATIVAMENTE reevaluar si son los modelos correctos para la práctica.
 
-El objetivo de esta práctica es *demostrar la capacidad de aplicar modelos de tipo Large Language Models (LLMs) para extraer conocimiento*. Los estudiantes deberán utilizar un LLM, ya sea descargado o a través de una API pública, y *diseñar un prompt adecuado utilizando técnicas de prompt engineering*. Este proceso permitirá la automatización del procesamiento de información, la generación de un reporte y la evaluación de la calidad del resultado.
-
-La práctica puede realizarse en grupos de hasta 4 personas, cuyos nombres deben estar claramente indicados en un documento README.md. Durante la realización de la práctica, será necesario explorar el funcionamiento de al menos tantos modelos de tipo LLM como participantes en el grupo. Estos modelos pueden ser del repositorio de Hugging Face o de una API pública. Además, se deben probar al menos tres tipos de prompts, cada uno utilizando una técnica de prompt engineering: zero-shot (solo explicación), few-shots (explicación con ejemplos) y chain of thoughts (razonamiento del resultado).
-
-### Librerías utilizadas:
-```
-%pip install datasets
-%pip install transformers
-%pip install pandas
-%pip install tensorflow
-%pip install torch
-%pip install tf-keras
-%pip install os
-```
-
-### LLMs seleccionados:
-1. `siebert/sentiment-roberta-large-english`
-- Clasifica reseñas en positivo y negativo.
-2. `nlptown/bert-base-multilingual-uncased-sentiment`
-- Clasifica de 1 a 5 estrellas.
-3. `cardiffnlp/twitter-roberta-base-sentiment`
-- Clasifica positivo, neutro o negativo.
-
-### Teoría prompt engineering:
+### Teoría Prompt Engineering
 - **Zero-shot** prompting means that the prompt used to interact with the model won't contain examples or demonstrations. The zero-shot prompt directly instructs the model to perform a task without any additional examples to steer it.
     Example: 
     ``` Prompt:
@@ -83,11 +62,26 @@ La práctica puede realizarse en grupos de hasta 4 personas, cuyos nombres deben
             Adding all the odd numbers (15, 5, 13, 7, 1) gives 41. The answer is False.```
 
 
-El *problema a resolver* es libre, pero debe ser validable como correctamente resuelto o no, o tener algún tipo de métrica numérica. Algunas ideas incluyen la detección de copia en prácticas, la corrección automática de exámenes de programación, la detección de spam, la extracción de contactos de una página web ... Es importante que el sistema se pueda aplicar a más de una fuente de datos o documentos (al menos 10), permitiendo el conteo del número de aciertos o una nota media de calidad si la evaluación es numérica.
 
-El problema a resolver es un análisis de reseñas de Amazon, las estrellas que el usuario le da al producto (1-5) y el sentimiento (negativo, neutro, positivo).
-
-La práctica se entregará en forma de Jupyter Notebook, que debe ser aplicable en Google Colab. En el Jupyter Notebook deben aparecer los modelos a descargar, los prompts explicados, ejecutados y evaluados. Además, se debe preparar una presentación para exponer el último día de clase, explicando el problema, los prompts y modelos que mejor funcionaron, y un resumen de los resultados obtenidos con conclusiones finales.
+## 
+### Librerías
+```
+%pip install datasets
+%pip install transformers
+%pip install pandas
+%pip install tensorflow
+%pip install torch
+%pip install tf-keras
+%pip install os
+```
+### LLMs Utilizados
+Al ser tres personas, se evalúan tres LLMs.
+1. `siebert/sentiment-roberta-large-english`
+- Clasifica reseñas en positivo y negativo.
+2. `nlptown/bert-base-multilingual-uncased-sentiment`
+- Clasifica de 1 a 5 estrellas.
+3. `cardiffnlp/twitter-roberta-base-sentiment`
+- Clasifica positivo, neutro o negativo.
 
 ### Instrucciones:
 
