@@ -1,7 +1,7 @@
 # Practica4
 ## Olivia Troitiño, Claudia Gascó, Alberto Martin
 README separado en dos secciones.
-1. [Dev](Dev) (comentarios durante el development de la práctica)
+1. Dev (comentarios durante el development de la práctica)
 2. Entrega (información README estándar)
 
 ## Dev
