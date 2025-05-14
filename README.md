@@ -76,12 +76,12 @@ README separado en dos secciones.
 ```
 ### LLMs Utilizados
 Al ser tres personas, se evalúan tres LLMs.
-1. `siebert/sentiment-roberta-large-english`
-- Clasifica reseñas en positivo y negativo.
-2. `nlptown/bert-base-multilingual-uncased-sentiment`
-- Clasifica de 1 a 5 estrellas.
-3. `cardiffnlp/twitter-roberta-base-sentiment`
-- Clasifica positivo, neutro o negativo.
+1. `declare-lab/flan-alpaca-base`
+
+2. `tiiuae/falcon-rw-1b`
+
+3. `google/flan-t5-base`
+
 
 ### Instrucciones:
 
