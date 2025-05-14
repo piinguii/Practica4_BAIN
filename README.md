@@ -74,14 +74,13 @@ README separado en dos secciones.
 %pip install tf-keras
 %pip install os
 ```
-### LLMs Utilizados
-Al ser tres personas, se evalúan tres LLMs.
+### LLMs Testeados
 1. `siebert/sentiment-roberta-large-english`
-- Clasifica reseñas en positivo y negativo.
+- Clasifica reseñas en positivo y negativo. Solo funciona para "raw text", hay que darle solamente la reseña. Por lo tanto, no aplica a ninguno de los tipos de prompt engineering.
 2. `nlptown/bert-base-multilingual-uncased-sentiment`
-- Clasifica de 1 a 5 estrellas.
-3. `cardiffnlp/twitter-roberta-base-sentiment`
-- Clasifica positivo, neutro o negativo.
+- Clasifica reseñas de 1 a 5 estrellas.
+3. `google/flan-t5-base`
+- 
 
 ### Instrucciones:
 
